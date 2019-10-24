@@ -814,7 +814,7 @@ tibble::tibble()
 library(DT)
 library(readr)
 
-theo_sd <- read_csv("~/ACOP-2019-Intro-R-4-Drug-Development-Workshop/nlmixr/theo_sd.csv")
+theo_sd <- read_csv("~/ACOP-2019-R-for-Drug-Development-Workshop/nlmixr/theo_sd.csv")
 
 fluidPage(
   titlePanel("Basic DataTable for Theophiline"),
@@ -853,7 +853,7 @@ function(input, output) {
   # Filter data based on selections
   output$table <- DT::renderDataTable({
     DT::datatable({
-    data <- read_csv("~/ACOP-2019-Intro-R-4-Drug-Development-Workshop/nlmixr/theo_sd.csv")
+    data <- read_csv("~/ACOP-2019-R-for-Drug-Development-Workshop/nlmixr/theo_sd.csv")
     if (input$CMT != "All") {
         data <- data[data$CMT == input$CMT,]
     }
@@ -885,7 +885,7 @@ library(ggplot2)
 library(readr)
 library(Cairo)   # For nicer ggplot2 output when deployed on Linux
 
-data <- read_csv("~/PAGE-2019-Intro-R-4-Drug-Development-Workshop/nlmixr/theo_sd.csv")
+data <- read_csv("theo_sd.csv")
 
 ui <- fluidPage(
     fluidRow(
