@@ -119,9 +119,9 @@ group members. Tell them:
 
 ### We'll Cover Four Main Areas:
 <div class="columns-2">
-- Tidyverse & nlmixr
+- Tidyverse & Theophiline PK Data
 - Shiny
-- R Markdown
+- R Markdown & nlmixr
 - htmlwidgets for R
 - If time:
 - Deploying via Shiny Server & RStudio Connect
